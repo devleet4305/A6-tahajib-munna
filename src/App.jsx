@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import heroImg from './assets/hero.png'; // ✅ ADD HERE
+
 const productsData = [
   { id: 1, name: "AI Writing Pro", price: 29, period: "one-time", tag: "Popular", icon: "✍️", description: "Advanced AI writing assistant", features: ["Unlimited generations", "50+ templates"] },
   { id: 2, name: "Design Template Pack", price: 49, period: "one-time", tag: "Best Seller", icon: "🎨", description: "500+ premium design templates", features: ["Figma files", "Editable"] },
@@ -66,7 +66,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Banner */}
+      {/* banner */}
       <div style={{ background: 'linear-gradient(to right, #6b21a8, #9333ea)', color: 'white', padding: '110px 40px', textAlign: 'center' }}>
         <h1 style={{ fontSize: '52px', fontWeight: '700', marginBottom: '20px' }}>Supercharge Your Digital Workflow</h1>
         <p style={{ fontSize: '21px', maxWidth: '720px', margin: '0 auto 40px' }}>Discover premium tools to boost your productivity and creativity.</p>
@@ -154,7 +154,7 @@ function App() {
           </div>
         )}
 
-        {/* Cart Section - Made to match your screenshot */}
+        {/* cart-section */}
         {activeTab === 'cart' && (
           <div style={{ maxWidth: '700px', margin: '40px auto', backgroundColor: '#ffffff', borderRadius: '24px', boxShadow: '0 10px 40px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
             <div style={{ padding: '40px' }}>
@@ -224,21 +224,21 @@ function App() {
       gap: '30px'
     }}>
       
-      {/* Step 1 */}
+     
       <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
         <div style={{ fontSize: '40px', marginBottom: '15px' }}>👤</div>
         <h3 style={{ fontSize: '20px', fontWeight: '600' }}>Create Account</h3>
         <p style={{ color: '#64748b' }}>Sign up in seconds</p>
       </div>
 
-      {/* Step 2 */}
+      
       <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
         <div style={{ fontSize: '40px', marginBottom: '15px' }}>📦</div>
         <h3 style={{ fontSize: '20px', fontWeight: '600' }}>Choose Products</h3>
         <p style={{ color: '#64748b' }}>Browse premium tools</p>
       </div>
 
-      {/* Step 3 */}
+      
       <div style={{ backgroundColor: 'white', padding: '30px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
         <div style={{ fontSize: '40px', marginBottom: '15px' }}>🚀</div>
         <h3 style={{ fontSize: '20px', fontWeight: '600' }}>Start Creating</h3>
